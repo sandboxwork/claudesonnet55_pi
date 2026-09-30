@@ -1,0 +1,22 @@
+{
+  "name": "pi-motion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "원주율 π — 음성(audio.currentTime)이 마스터 타임라인인 인터랙티브 모션그래픽",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "narration": "node scripts/generate-narration.mjs",
+    "narration:offline": "node scripts/generate-narration.mjs --offline",
+    "voices": "node scripts/list-voices.mjs",
+    "build:static": "node scripts/build-static.mjs",
+    "serve": "node scripts/serve.mjs . 5173",
+    "serve:dist": "node scripts/serve.mjs dist 4173",
+    "start": "node scripts/serve.mjs . 5173"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
